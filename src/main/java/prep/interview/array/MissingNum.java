@@ -15,7 +15,7 @@ public class MissingNum {
 
     public static void main(String[] args) {
         long n1 = System.nanoTime();
-        int[] numbers = {13, 5, 4, 10, 7, 11, 1, 9, 12, 8, 2, 6};
+        int[] numbers = {3, 5, 4, 10, 7, 1, 9, 12, 8, 2, 6};
         int missingNumber = findMissingNumber(numbers);
         System.out.println("The missing number is: " + missingNumber);
         long n2 = System.nanoTime();

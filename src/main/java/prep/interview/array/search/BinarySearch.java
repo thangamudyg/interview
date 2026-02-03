@@ -20,12 +20,12 @@ public class BinarySearch {
         for (int i : arr ){
             System.out.println(i);
         }
-        System.out.println(findIndexValue(arr, 0, n - 1,12));
+        System.out.println(findIndexValue(arr, 0, n - 1,56));
         System.out.println(binarySearch(arr, n - 1,56));
     }
 
     private static int findIndexValue(int[] arr, int l, int r, int value) {
-        if (r >= l) {
+        if (l <= r) {
             int mid = l + (r - l)  / 2;
             if (arr[mid] == value)
                 return mid;
@@ -47,7 +47,7 @@ public class BinarySearch {
         while(l <= r) {
             int mid = l + (r-l)/2;
             if(value == arr[mid]) return mid;
-            if(arr[mid] < value) {
+            if(value > arr[mid]) {
                 l = mid + 1;
             } else {
                 r = mid - 1;
